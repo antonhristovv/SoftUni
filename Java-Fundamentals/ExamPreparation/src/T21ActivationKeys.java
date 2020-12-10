@@ -41,7 +41,6 @@ public class T21ActivationKeys {
                 default:
                     System.out.println("Unknown command: " + command);
             }
-
             input = scanner.nextLine();
         }
         System.out.println("Your activation key is: " + activationPassword);
