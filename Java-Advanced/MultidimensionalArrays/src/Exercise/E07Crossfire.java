@@ -20,13 +20,13 @@ public class E07Crossfire {
             int destroyCol = Integer.parseInt(input.split("\\s+")[1]);
             int destroyRadius = Integer.parseInt(input.split("\\s+")[2]);
 
-            //destroy up and down from destroy row
-            for (int currentRow = destroyRow - destroyRadius; currentRow < destroyRow + destroyRadius; currentRow++) {
-                if (isInMatrix(currentRow, destroyCol, matrix)) {
+            //destroy up and down from destroy target
+            for (int currentRow = destroyRow - destroyRadius; currentRow <= destroyRow + destroyRadius; currentRow++) {
+                if (isInMatrix(currentRow, destroyCol, matrix) && currentRow != destroyRow) {
                     matrix.get(currentRow).remove(destroyCol);
                 }
             }
-            //destroy left and right from destroy col
+            //destroy left and right from destroy target + destroy target
             for (int currentCol = destroyCol + destroyRadius; currentCol >= destroyCol - destroyRadius; currentCol--) {
                 if (isInMatrix(destroyRow, currentCol, matrix)) {
                     matrix.get(destroyRow).remove(currentCol);
