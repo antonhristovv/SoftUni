@@ -1,2 +1,2 @@
 # SoftUni
-Java fundamentals - SoftUni
+Java courses - SoftUni
