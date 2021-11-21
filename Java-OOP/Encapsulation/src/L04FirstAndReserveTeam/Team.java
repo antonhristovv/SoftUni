@@ -1,6 +1,4 @@
-package Lab.L04FirstAndReserveTeam;
-
-import Lab.Person;
+package L04FirstAndReserveTeam;
 
 import java.util.ArrayList;
 import java.util.Collections;

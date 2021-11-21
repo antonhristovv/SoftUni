@@ -1,6 +1,4 @@
-package Lab.L02SalaryIncrease;
-
-import Lab.Person;
+package L03ValidationData;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,8 +17,13 @@ public class Main {
             String lastName = input[1];
             int age = Integer.parseInt(input[2]);
             double salary = Double.parseDouble(input[3]);
-            people.add(new Person(firstName, lastName, age, salary));
+            try {
+                people.add(new Person(firstName, lastName, age, salary));
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+            }
         }
+
         double bonus = Double.parseDouble(reader.readLine());
         for (Person person : people) {
             person.increaseSalary(bonus);

@@ -1,6 +1,4 @@
-package Lab.L04FirstAndReserveTeam;
-
-import Lab.Person;
+package L04FirstAndReserveTeam;
 
 public class Main {
     public static void main(String[] args) {

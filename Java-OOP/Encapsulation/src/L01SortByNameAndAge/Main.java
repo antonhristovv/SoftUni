@@ -1,6 +1,4 @@
-package Lab.L01SortByNameAndAge;
-
-import Lab.Person;
+package L01SortByNameAndAge;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -16,7 +14,7 @@ public class Main {
         List<Person> people = new ArrayList<>();
 
         for (int i = 0; i < n; i++) {
-            String[] input = reader.readLine().split("\\s+");
+            String[] input = reader.readLine().split(" ");
             people.add(new Person(input[0], input[1], Integer.parseInt(input[2])));
         }
 
