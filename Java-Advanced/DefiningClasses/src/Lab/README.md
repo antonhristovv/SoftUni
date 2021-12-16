@@ -18,11 +18,11 @@ Create a Test client in the same package:
 
 You should be now able to use your class:
  
-Private Fields
+### Private Fields
 Change the access modifiers of all class fields to private.
 When done go back to the main method you should have compilation errors, like this:
  
-Getters and Setters
+### Getters and Setters
 Create getters and setters for each class field. 
 Getter for the car brand:
  
@@ -62,7 +62,7 @@ The car is: Test Purposes - 4 HP.
 The car is: No Way - 5 HP.
  
 Part II: Constructors
-2. Car Constructors
+### 2. Car Constructors
 Make proper constructors for the Car class so you can create car objects with different type of input information.
 If you miss information about field of type String set the value to "unknown", and for integer field set -1.
 First declare constructor which takes only the car brand as parameter:
