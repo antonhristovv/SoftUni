@@ -1,7 +1,10 @@
-Lab: Defining Classes
+# Lab: Defining Classes
+
 This document defines the lab for "Java Advanced" course @ Software University. Please submit your solutions (source code) of all below described problems in Judge.
-Part I: Defining Classes
-1. Car Info
+
+## Part I: Defining Classes
+
+### 1. Car Info
 Create a class named Car.
 The class should have public fields for:
     • Brand: String
